@@ -1,0 +1,94 @@
+{
+  "Request": [
+    {
+      "Id": "1",
+      "JsonTag": "DEALERID",
+      "DataType": "N",
+      "Description": "Dealer ID",
+      "Min_len": "1",
+      "Max_len": "10",
+      "IsMandatory": "Yes"
+    },
+    {
+      "Id": "2",
+      "JsonTag": "DEALID",
+      "DataType": "AN",
+      "Description": "Deal ID",
+      "Min_len": "1",
+      "Max_len": "16",
+      "IsMandatory": "Yes"
+    },
+    {
+      "Id": "3",
+      "JsonTag": "LOANAMT",
+      "DataType": "D",
+      "Description": "Loan Amount",
+      "Min_len": "1",
+      "Max_len": "15",
+      "IsMandatory": "Yes"
+    },
+    {
+      "Id": "4",
+      "JsonTag": "VALIDATIONKEY",
+      "DataType": "N",
+      "Description": "VALIDATION KEY",
+      "Min_len": "1",
+      "Max_len": "24",
+      "IsMandatory": "Yes"
+    },
+    {
+      "Id": "5",
+      "JsonTag": "ORDERNO",
+      "DataType": "AN",
+      "Description": "Order Number",
+      "Min_len": "1",
+      "Max_len": "23",
+      "IsMandatory": "Yes"
+    },
+    {
+      "Id": "6",
+      "JsonTag": "REQUESTID",
+      "DataType": "AN",
+      "Description": "Request ID",
+      "Min_len": "1",
+      "Max_len": "50",
+      "IsMandatory": "Yes"
+    },
+    {
+      "Id": "7",
+      "JsonTag": "REQUESTDATE1",
+      "DataType": "N",
+      "Description": "REQUEST DATE1",
+      "Min_len": "0",
+      "Max_len": "14",
+      "IsMandatory": "No"
+    },
+    {
+      "Id": "8",
+      "JsonTag": "REQUESTDATE2",
+      "DataType": "N",
+      "Description": "REQUEST DATE2",
+      "Min_len": "0",
+      "Max_len": "14",
+      "IsMandatory": "No"
+    },
+    {
+      "Id": "9",
+      "JsonTag": "REQUESTTEXT1",
+      "DataType": "N",
+      "Description": "REQUEST TEXT1",
+      "Min_len": "0",
+      "Max_len": "15",
+      "IsMandatory": "No"
+    },
+    {
+      "Id": "10",
+      "JsonTag": "REQUESTTEXT2",
+      "DataType": "N",
+      "Description": "REQUEST TEXT2",
+      "Min_len": "0",
+      "Max_len": "2",
+      "IsMandatory": "No"
+    }
+  ]
+}

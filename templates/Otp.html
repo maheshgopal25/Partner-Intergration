@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>OTP</title>
+<head>
+    <style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.container {
+  padding: 30px;
+  background-color: #f2f2f2;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: block;
+}
+input[type=text]{
+  margin: -1px 0 5px 0;
+  display: block;
+  width: 60%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: horizontal;
+}
+.submitbtn {
+  background-color: #04AA6D;
+  color: black;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  text-align: center;
+  opacity: 0.9;
+}
+.submitbtn:hover {
+  opacity: 10;
+}
+    </style>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="" class="active">OTP</a>
+</div>
+
+<form method="POST" action="{% url 'send_request' %}">
+    <div class="container">
+        <label for="c_num"><b>Card Number</b></label> <input type="text" placeholder="Enter Card Number"
+                                                             name="CARDNUMBER" id="CARDNUMBER">
+        <label for="o_num"><b>Order Number</b></label> <input type="text" placeholder="Enter Order Number"
+                                                              name="ORDERNO" id="ORDERNO">
+        <label for="deal_id"><b>Dealer ID</b></label> <input type="text" placeholder="Enter Dealer ID" name="DEALERID"
+                                                             id="DEALERID">
+        <label for="val_key"><b>Validation key</b></label> <input type="text" placeholder="Enter Validation Key"
+                                                                  name="VALIDATIONKEY" id="VALIDATIONKEY">
+        <label for="req_id"><b>Request Id</b></label> <input type="text" placeholder="Enter Request ID" name="REQUESTID"
+                                                             id="REQUESTID">
+        <label for="req_date_1"><b>Request Date1</b></label> <input type="text" placeholder="Enter Request Date 1"
+                                                                    name="REQUESTDATE1" id="REQUESTDATE1">
+        <label for="req_date_2"><b>Request Date2</b></label> <input type="text" placeholder="Enter Request Date 2"
+                                                                    name="REQUESTDATE2" id="REQUESTDATE2">
+        <label for="req_text_1"><b>Request Text1</b></label> <input type="text" placeholder="Enter Request Text 1"
+                                                                    name="REQUESTTEXT1" id="REQUESTTEXT1">
+        <label for="req_text_2"><b>Request Text2</b></label> <input type="text" placeholder="Enter Request Text 2"
+                                                                    name="REQUESTTEXT2" id="REQUESTTEXT2">
+        <label for="manufacture_id"><b>Manufacture ID</b></label> <input type="text" placeholder="Enter Manufacture ID"
+                                                                         name="Manufacturer" id="Manufacturer">
+        <label for="asset_id"><b>Asset ID</b></label> <input type="text" placeholder="Enter Asset ID" name="ASSETID"
+                                                             id="ASSETID">
+        <label for="loan_amnt"><b>Loan Amount</b></label> <input type="text" placeholder="Enter Loan Amount"
+                                                                 name="LOANAMT" id="LOANAMT">
+        <label for="tnc_accept"><b>Tnc Accept</b></label> <input type="text" placeholder="Enter Tnc Accept"
+                                                                 name="TncACCEPT" id="TncACCEPT">
+        <label for="otp_no"><b>Otp No</b></label> <input type="text" placeholder="Enter Otp No" name="OTPNO" id="OTPNO">
+        <label for="name_on_card"><b>Count Name On Card</b></label> <input type="text" placeholder="Enter Name On Card"
+                                                                           name="NAMEONCARD" id="NAMEONCARD">
+        <label for="ip_address"><b>Count Ip Address</b></label> <input type="text" placeholder="Enter Ip Address"
+                                                                       name="IPADDR" id="IPADDR">
+        <label for="tenture"><b>Tenture</b></label> <input type="text" placeholder="Enter Tenture" name="Tenure"
+                                                           id="Tenure">
+        <label for="pin_code"><b>Pin Code</b></label> <input type="text" placeholder="Enter Pin Code" name="PIN"
+                                                             id="PIN">
+        <label for="sale_type"><b>Sale Type</b></label> <input type="text" placeholder="Enter Sale Type" name="SALETYPE"
+                                                               id="SALETYPE">
+        <label for="product_desc"><b>Product Description</b></label> <input type="text"
+                                                                            placeholder="Enter Product Description"
+                                                                            name="PRODDESC" id="PRODDESC">
+        <label for="scheme_id"><b>Scheme ID</b></label> <input type="text" placeholder="Enter Scheme ID" name="SCHEMEID"
+                                                               id="SCHEMEID">
+        <label for="mobile_num"><b>Mobile Number</b></label> <input type="text" placeholder="Enter Mobile Number"
+                                                                    name="MOBILENO" id="MOBILENO">
+
+        <input type="hidden" id="apiName" name="ApiName" value="InitiateOTP">
+
+        <button type="submit" class="submitbtn">Submit</button>
+    </div>
+</form>
+</body>
+</html>

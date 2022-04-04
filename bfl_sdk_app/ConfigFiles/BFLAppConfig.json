@@ -1,0 +1,13 @@
+{
+  "IV": "1234567887654321",
+  "KEY": "B0L7iJ2sytuz4iOM2DpK06pkHdhZEV8t",
+  "BaseUrl": "https://bfluat.in.worldline-solutions.com/wlbflEcomRest/WLECOMRest.svc",
+  "SupplierIDLabel": "DEALERID",
+  "EnhanceReQuery": "https://bfluat.in.worldline-solutions.com/WorldlineInterFaceEnhanceRequery/WorldlineInterFaceEnhanceRequery.svc",
+  "ReQueryLabel": "ENQRequest",
+  "SupplierIDPOD": "95",
+  "AlphaNumeric": "^[a-zA-Z0-9\\\\_. #,&*()-<>/:;[\\]]*$",
+  "Numeric": "^\\d+$",
+  "Char": "^[a-zA-Z]+$",
+  "Decimal": "[0-9]+([,.][0-9]{1,2})?"
+}
